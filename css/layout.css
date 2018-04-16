@@ -51,6 +51,7 @@ a:hover {
         cursor: pointer;
         user-select: none;
         min-width: 25%;
+        display:none;
 }
 
 .refresh-link:hover {

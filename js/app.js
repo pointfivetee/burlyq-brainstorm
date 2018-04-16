@@ -25,6 +25,8 @@ $(document).ready(function() {
             $("#output").append(div);
             
         };
+        
+        $(".refresh-link").show();
     }
 
     setTimeout(function() {
