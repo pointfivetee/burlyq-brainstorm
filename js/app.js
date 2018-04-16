@@ -1,6 +1,8 @@
 var app = {grammar : undefined};
 
 $(document).ready(function() {
+
+    const NUM_ACTS = 1;
     
     function loadGrammar() {
         $("#output").html("");
@@ -10,7 +12,7 @@ $(document).ready(function() {
         var grammar = app.grammar;
         grammar.addModifiers(baseEngModifiers);
         
-        var total = 20;
+        var total = NUM_ACTS;
         
         var startTime = Date.now();
         for (var i = 0; i < total; i++) {
@@ -41,8 +43,8 @@ $(document).ready(function() {
 
     }, 10);
 
-    $('#grammarSelect').on('change', function() {
-        loadGrammar(this.value);
+    $('.refresh-link').on('click', function() {
+        loadGrammar();
     });
 
 });
